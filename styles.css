@@ -1,0 +1,64 @@
+body{
+	background: radial-gradient(circle, rgba(0,212,255,1) 19%, rgba(150,255,74,1) 81%);
+	background-size: 400% 400%;
+	animation: backGroundGo 15s ease infinite;
+	height: 100vh;
+}
+@keyframes backGroundGo {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.parentCard{
+    border: 2px solid #fff;
+    width: 50%;
+    border-radius: 40px;
+    margin: auto;
+    background-color: rgba(0,0,0,.3);
+    transform: translateY(50%);
+}
+.logButton{
+    background-image: url("assets/cuteDragon.png");
+    background-size: 75px 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: " ";
+    height: 105px;
+    width: 80px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+.insideCardArea{
+    padding: 40px;
+}
+.CardElems{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+}
+.fieldSecret{
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    height: 40px;
+}
+.labelClass{
+    color: #fff;
+    font-size: 20px;
+}
+.fieldSecret::placeholder{
+    color: #fff;
+    padding: 0px 20px 0px 20px;
+}
